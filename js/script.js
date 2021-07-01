@@ -62,4 +62,4 @@ else {
 console.log(prezzoFinale);
 
 title.innerHTML = ('Per compiere ') + kilometers + ' ' + 'Km';
-tot.innerHTML = ('Il prezzo del suo tiket è pari a:') + ' ' + prezzoFinale + ' ' + '€';
+tot.innerHTML = ('Il prezzo del suo tiket è pari a:') + ' ' + prezzoFinale .toFixed(2)  + ' ' + '€';
