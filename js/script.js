@@ -34,7 +34,7 @@ var tiket1Km = 0.21;
 console.log(tiket1Km);
 
 /* ticket standard */
-ticketStandard = kilometers * tiket1Km;
+var ticketStandard = kilometers * tiket1Km;
 console.log(ticketStandard);
 
 var under18 = ticketStandard * 20 / 100;
@@ -42,10 +42,24 @@ console.log(under18)
 var over65 = ticketStandard * 40 / 100;
 console.log(over65)
 
+var prezzoFinale = 0;
+
 /*20% discount for children under 18 */
 if (years < 18) {
-    console.log(under18)
-} 
-else if (years > 65) {
-    console.log(over65);
+    prezzoFinale = ticketStandard - under18;
 }
+
+/*40% discount for children over 65 */
+else if (years > 65) {
+    prezzoFinale = ticketStandard - over65;
+}
+
+/*none discount*/
+else {
+    prezzoFinale = ticketStandard
+} 
+
+console.log(prezzoFinale);
+
+title.innerHTML = ('Per compiere ') + kilometers + ' ' + 'Km';
+tot.innerHTML = ('Il prezzo del suo tiket è pari a:') + ' ' + prezzoFinale + ' ' + '€';
