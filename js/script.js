@@ -9,3 +9,22 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 
 */
 
+// 1 - prendiamo Il numero dei chilometri che l'utente digita
+// 2 - prendiamo l'età dell'utente
+// 3 - stabiliamo il prezzo del biglietto per un km
+// 4 - calcoliamo il prezzo del biglietto standad per un km
+// 5 - Applichiamo uno sconto del 20% ai minori di 18 anni
+// 6 - calcoliamo il prezzo del biglietto standad - il 20%
+// 7 - Applichiamo uno sconto del 40% ai maggiori di 65 anni
+// 8 - calcoliamo il prezzo del biglietto standad - il 40%
+// 9 - stampiamo risultato prezzo biglietto
+
+
+
+/* number of kilometers */
+var kilometers = prompt('Quanti chilometri vuoi prercorrere?')
+console.log(kilometers)
+
+/* number of kilometers */
+var years = prompt('Quanti anni hai?')
+console.log(years)
