@@ -34,5 +34,18 @@ var tiket1Km = 0.21;
 console.log(tiket1Km);
 
 /* ticket standard */
-ticketStandard = kilometers * tiket1Km + '€';
+ticketStandard = kilometers * tiket1Km;
 console.log(ticketStandard);
+
+var under18 = ticketStandard * 20 / 100 + 100;
+console.log(under18)
+var over65 = ticketStandard * 40 / 100;
+console.log(over65)
+
+/*20% discount for children under 18 */
+if (years < 18) {
+    console.log(under18)
+} 
+else if (years > 65) {
+    console.log(over65);
+}
