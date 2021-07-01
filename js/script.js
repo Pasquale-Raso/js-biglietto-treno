@@ -37,7 +37,7 @@ console.log(tiket1Km);
 ticketStandard = kilometers * tiket1Km;
 console.log(ticketStandard);
 
-var under18 = ticketStandard * 20 / 100 + 100;
+var under18 = ticketStandard * 20 / 100;
 console.log(under18)
 var over65 = ticketStandard * 40 / 100;
 console.log(over65)
