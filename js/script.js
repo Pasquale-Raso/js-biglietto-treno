@@ -14,9 +14,9 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 // 3 - stabiliamo il prezzo del biglietto per un km
 // 4 - calcoliamo il prezzo del biglietto standad per un km
 // 5 - Applichiamo uno sconto del 20% ai minori di 18 anni
-// 6 - calcoliamo il prezzo del biglietto standad - il 20%
+// 6 - calcoliamo il prezzo del biglietto standard meno il 20%
 // 7 - Applichiamo uno sconto del 40% ai maggiori di 65 anni
-// 8 - calcoliamo il prezzo del biglietto standad - il 40%
+// 8 - calcoliamo il prezzo del biglietto standad meno il 40%
 // 9 - stampiamo risultato prezzo biglietto
 
 
@@ -25,6 +25,14 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 var kilometers = prompt('Quanti chilometri vuoi prercorrere?')
 console.log(kilometers)
 
-/* number of kilometers */
+/* years */
 var years = prompt('Quanti anni hai?')
 console.log(years)
+
+/* ticket price for one km */
+var tiket1Km = 0.21;
+console.log(tiket1Km);
+
+/* ticket standard */
+ticketStandard = kilometers * tiket1Km + '€';
+console.log(ticketStandard);
