@@ -34,36 +34,28 @@ var tiket1Km = 0.21;
 console.log(tiket1Km);
 
 /* ticket standard */
-var ticketStandard = kilometers * tiket1Km;
-console.log(ticketStandard);
+var prezzo = kilometers * tiket1Km;
+console.log(prezzo);
 
-var under18 = ticketStandard * 20 / 100;
+var under18 = prezzo * 20 / 100;
 console.log(under18)
-var over65 = ticketStandard * 40 / 100;
+var over65 = prezzo * 40 / 100;
 console.log(over65)
-
-var prezzoFinale = 0;
 
 /*20% discount for children under 18 */
 if (years < 18) {
-    prezzoFinale = ticketStandard - under18;
+     prezzo = prezzo - under18;
 }
 
 /*40% discount for children over 65 */
 else if (years > 65) {
-    prezzoFinale = ticketStandard - over65;
+    prezzo = prezzo - over65;
 }
 
-/*none discount*/
-else {
-    prezzoFinale = ticketStandard
-} 
-
-console.log(prezzoFinale);
+console.log(prezzo);
 
 var title = document.getElementById('title');
 var tot = document.getElementById('tot');
 
-
 title.innerHTML = ('Per compiere ') + kilometers + ' ' + 'Km';
-tot.innerHTML = ('Il prezzo del tuo ticket è pari a:') + ' ' + prezzoFinale .toFixed(2)  + ' ' + '€';
+tot.innerHTML = ('Il prezzo del tuo ticket è pari a:') + ' ' + prezzo .toFixed(2)  + ' ' + '€';
